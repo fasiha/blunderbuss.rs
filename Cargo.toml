@@ -1,0 +1,7 @@
+[package]
+name = "nekobus"
+version = "0.1.0"
+authors = ["Ahmed Fasih <wuzzyview@gmail.com>"]
+
+[dependencies]
+num = "0.1"
