@@ -44,13 +44,13 @@ where
     let mut iy: usize = 0;
     if conjx {
         while ix < x.len() && iy < y.len() {
-            y[iy] = Conjugate::conj(y[iy]) + x[ix];
+            y[iy] = Conjugate::conj(x[iy]) + y[ix];
             ix += incx;
             iy += incy;
         }
     } else {
         while ix < x.len() && iy < y.len() {
-            y[iy] = y[iy] + x[ix];
+            y[iy] = x[iy] + y[ix];
             ix += incx;
             iy += incy;
         }
